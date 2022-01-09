@@ -6,3 +6,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.bg_gray{
+    background-color: lightgray;
+}
+
+.myCardSingle{
+    border-radius: 15px;
+    background-size: 40%;
+    background-repeat: no-repeat;   
+    background-position: 120% 50%;
+}
+
+.myCardSingle > .desc {
+    width: 60%;
+}
+
+.pill_indigo{
+    background-color: var(--bs-indigo);
+}
+
+
+.myCardSingle.inertia{
+        background-image: url(../img/inertia-and-spa-techniques.svg);
+}
+.myCardSingle.graphQL{
+        background-image: url(../img/graphql-with-laravel-and-vue.svg);
+}
+.myCardSingle.vsCode{
+        background-image: url(../img/visual-studio-code-for-php-developers.svg);
+}
+.myCardSingle.cssGrid{
+        background-image: url(../img/css-grids-for-everyone.svg);
+}
+.myCardSingle.bladeComponent{
+        background-image: url(../img/practical-blade-components.svg);
+}
+.myCardSingle.livewire{
+        background-image: url(../img/livewire-basics2.svg);
+}

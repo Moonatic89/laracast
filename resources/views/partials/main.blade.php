@@ -1,44 +1,19 @@
-<main>
+<main class="bg_gray pt-5">
     <div class="container">
-        <div>
-            <h2>Recently Updated</h2>
-        </div>
-        <div>
-            <h2>Trending Series</h2>
-        </div>
-        <div>
-            <h2>Learn OOP</h2>
-        </div>
-        <div>
-            <h2>New to Laracasts?</h2>
-        </div>
-        <div>
-            <h2>Master Your Code Editor</h2>
-        </div>
-        <div>
-            <h2>Learn Laravel</h2>
-        </div>
-        <div>
-            <h2>What's New in Laravel?</h2>
-        </div>
-        <div>
-            <h2>Build an App</h2>
-        </div>
-        <div>
-            <h2>Grow TALL</h2>
-        </div>
-        <div>
-            <h2>Learn a Tool</h2>
-        </div>
-        <div>
-            <h2>Level Up Your Testing</h2>
-        </div>
-        <div>
-            <h2>Currently Featured</h2>
-        </div>
-        <div>
-            <h2>Explore Topics</h2>
-        </div>
+
+        @include('partials.recently')
+        @include('partials.trending')
+        @include('partials.learnOOP')
+        @include('partials.newTo')
+        @include('partials.master')
+        @include('partials.learnLaravel')
+        @include('partials.whatsNew')
+        @include('partials.buildApp')
+        @include('partials.tall')
+        @include('partials.tool')
+        @include('partials.levelUp')
+        @include('partials.featured')
+        @include('partials.explore')
     </div>
 
 </main>
