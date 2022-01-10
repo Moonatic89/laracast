@@ -55,3 +55,35 @@ Come along, as I teach you everything you need to know in bite-sized episodes. Y
         Start Series
     </div>
 </div>
+
+
+<div class="bg_grad_dark container b_rad15 mt-5">
+    <div class="row flex-row">
+
+        <div class="title text-center text-white m-4">
+            Don't Forget About These
+        </div>
+        @foreach ($moreseriesDB as $index => $moreserieDB)
+
+        <div class="col-2 myCol b_rad15 text-center text-white">
+
+            <div class="thumb">
+                <img src="{{$moreserieDB['thumb']}}" alt="{{$moreserieDB['title']}}">
+            </div>
+
+            <div class="title ">
+                {{\Illuminate\Support\Str::limit($moreserieDB['title'], 20, $end='...') }}
+            </div>
+
+            <div class="date fs_7 text_gray">
+                {{$moreserieDB['date']}}
+            </div>
+
+            <div class="desc fs_7 text_gray mt-2">
+                {{\Illuminate\Support\Str::limit($moreserieDB['desc'], 86, $end='...') }}
+            </div>
+
+        </div>
+        @endforeach
+    </div>
+</div>

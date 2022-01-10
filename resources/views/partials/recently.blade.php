@@ -116,3 +116,34 @@ $desc = "GraphQL is often looked at as the successor to REST APIs. It provides a
         Start Series
     </div>
 </div>
+
+<div class="bg_grad_dark container b_rad15 mt-5">
+    <div class="row flex-row">
+
+        <div class="title text-center text-white m-4">
+            More Recently Updated Series
+        </div>
+        @foreach ($seriesDB as $index => $serieDB)
+
+        <div class="col-2 myCol b_rad15 text-center text-white">
+
+            <div class="thumb">
+                <img src="{{$serieDB['thumb']}}" alt="{{$serieDB['title']}}">
+            </div>
+
+            <div class="title ">
+                {{\Illuminate\Support\Str::limit($serieDB['title'], 20, $end='...') }}
+            </div>
+
+            <div class="date fs_7 text_gray">
+                {{$serieDB['date']}}
+            </div>
+
+            <div class="desc fs_7 text_gray mt-2">
+                {{\Illuminate\Support\Str::limit($serieDB['desc'], 86, $end='...') }}
+            </div>
+
+        </div>
+        @endforeach
+    </div>
+</div>

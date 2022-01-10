@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    $seriesDB = config('seriesDB');
+    $moreseriesDB = config('moreseriesDB');
+    $trendseriesDB = config('trendseriesDB');
+    $laravelnewDB = config('laravelnewDB');
+    $levelupDB = config('levelupDB');
+
+
+    return view('welcome', compact('seriesDB', 'moreseriesDB', 'trendseriesDB', 'laravelnewDB', 'levelupDB'));
 });

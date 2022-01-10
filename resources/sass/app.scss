@@ -7,8 +7,19 @@
     box-sizing: border-box;
 }
 
+.b_rad15{
+      border-radius: 15px;
+}
+
+.fs_7{
+    font-size: .7rem;
+}
+
 .bg_gray{
     background-color: lightgray;
+}
+.text_gray{
+    color: lightgray;
 }
 
 .myCardSingle{
@@ -25,7 +36,6 @@
 .pill_indigo{
     background-color: var(--bs-indigo);
 }
-
 
 .myCardSingle.inertia{
         background-image: url(../img/inertia-and-spa-techniques.svg);
@@ -44,4 +54,47 @@
 }
 .myCardSingle.livewire{
         background-image: url(../img/livewire-basics2.svg);
+}
+
+.bg_grad_dark{
+    background: linear-gradient(90deg, rgba(50,68,102,1) 0%, rgba(96,121,158,1) 100%);
+}
+
+.bg_grad_redblue{
+    background: linear-gradient(90deg, rgba(235,69,79,1) 0%, rgba(96,121,158,1) 100%);
+}
+.bg_grad_greenblue{
+    background: linear-gradient(90deg, rgb(50, 126, 98) 0%, rgba(96,121,158,1) 100%);
+}
+
+
+.bg_framework{
+    background-image: url(../img/journey-frameworks.svg);
+    background-repeat: no-repeat;   
+    background-position: left center;
+}
+.bg_testing{
+    background-image: url(../img/journey-testing.svg);
+    background-repeat: no-repeat;   
+    background-position: left center;
+}
+
+.myCol{
+    background-color: rgba(0,0,0,.1);
+    padding: 2rem;
+    margin: 1.25rem;
+}
+
+.myCol > .thumb > img{
+    width: 50%;
+}
+
+.myColSm{
+    padding: 1.5rem;
+}
+
+.bg_transparent{
+        background-color: rgba(0,0,0,.1);
+        padding: 1rem;
+
 }

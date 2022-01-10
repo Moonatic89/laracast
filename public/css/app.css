@@ -11249,8 +11249,20 @@ textarea.form-control-lg {
   box-sizing: border-box;
 }
 
+.b_rad15 {
+  border-radius: 15px;
+}
+
+.fs_7 {
+  font-size: 0.7rem;
+}
+
 .bg_gray {
   background-color: lightgray;
+}
+
+.text_gray {
+  color: lightgray;
 }
 
 .myCardSingle {
@@ -11290,4 +11302,47 @@ textarea.form-control-lg {
 
 .myCardSingle.livewire {
   background-image: url(../img/livewire-basics2.svg);
+}
+
+.bg_grad_dark {
+  background: linear-gradient(90deg, #324466 0%, #60799e 100%);
+}
+
+.bg_grad_redblue {
+  background: linear-gradient(90deg, #eb454f 0%, #60799e 100%);
+}
+
+.bg_grad_greenblue {
+  background: linear-gradient(90deg, #327e62 0%, #60799e 100%);
+}
+
+.bg_framework {
+  background-image: url(../img/journey-frameworks.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.bg_testing {
+  background-image: url(../img/journey-testing.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.myCol {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 1.25rem;
+}
+
+.myCol > .thumb > img {
+  width: 50%;
+}
+
+.myColSm {
+  padding: 1.5rem;
+}
+
+.bg_transparent {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 1rem;
 }
